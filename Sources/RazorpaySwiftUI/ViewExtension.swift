@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension View {
+public extension View {
     func razorpayCheckoutSheet(
         isPresented: Binding<Bool>,
         amount: Int,
