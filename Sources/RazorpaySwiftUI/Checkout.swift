@@ -81,21 +81,21 @@ struct CheckoutView: UIViewControllerRepresentable {
         }
         
         func showPaymentSheet(amount: Int) {
-            if RazorpaySwiftUI.razorpayKey.isEmpty {
+            if RazorpaySwiftUI.shared.razorpayKey.isEmpty {
                 onError(-1, "Invalid Razorpay API Key")
                 return
             }
             
             razorpayObj = RazorpayCheckout.initWithKey(
-                RazorpaySwiftUI.razorpayKey,
+                RazorpaySwiftUI.shared.razorpayKey,
                 andDelegate: self
             )
             let options: [AnyHashable:Any] = [
                 "prefill": [
-                    "contact": RazorpaySwiftUI.contact,
-                    "email": RazorpaySwiftUI.email
+                    "contact": RazorpaySwiftUI.shared.contact,
+                    "email": RazorpaySwiftUI.shared.email
                 ],
-                "amount" : amount
+                "amount": amount
             ]
             if let rzp = self.razorpayObj {
                 rzp.open(options)

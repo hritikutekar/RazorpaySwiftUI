@@ -6,7 +6,15 @@
 //
 
 class RazorpaySwiftUI {
-    public static var razorpayKey: String = ""
-    public static var contact: String = ""
-    public static var email: String = ""
+    public static let shared = RazorpaySwiftUI()
+    
+    public var razorpayKey: String = ""
+    public var contact: String = ""
+    public var email: String = ""
+    
+    public init() {}
+    
+    public func setRazorpayKey(_ key: String) {
+        self.razorpayKey = key
+    }
 }
