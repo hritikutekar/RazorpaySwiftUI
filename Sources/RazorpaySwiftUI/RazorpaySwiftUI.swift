@@ -1,6 +1,12 @@
-public struct RazorpaySwiftUI {
-    public private(set) var text = "Hello, World!"
+//
+//  RazorpaySwiftUI.swift
+//  RazorpaySwiftUI
+//
+//  Created by Hritik Utekar on 02/02/23.
+//
 
-    public init() {
-    }
+class RazorpaySwiftUI {
+    static var razorpayKey: String = ""
+    static var contact: String = ""
+    static var email: String = ""
 }
