@@ -5,7 +5,7 @@
 //  Created by Hritik Utekar on 02/02/23.
 //
 
-class RazorpaySwiftUI {
+public class RazorpaySwiftUI {
     public static let shared = RazorpaySwiftUI()
     
     public var razorpayKey: String = ""
