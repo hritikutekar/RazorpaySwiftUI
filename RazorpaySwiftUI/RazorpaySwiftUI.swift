@@ -6,5 +6,7 @@
 //
 
 class RazorpaySwiftUI {
-
+    static var razorpayKey: String = ""
+    static var contact: String = ""
+    static var email: String = ""
 }

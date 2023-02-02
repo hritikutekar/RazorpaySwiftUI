@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1828B4D3298B685A00DED9F3 /* RazorpaySwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828B4D2298B685A00DED9F3 /* RazorpaySwiftUI.swift */; };
+		1828B4DA298B697E00DED9F3 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828B4D9298B697E00DED9F3 /* Checkout.swift */; };
+		1828B4DC298B699700DED9F3 /* Razorpay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1828B4DB298B699700DED9F3 /* Razorpay.xcframework */; };
+		1828B4DE298B6C5200DED9F3 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828B4DD298B6C5200DED9F3 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		1828B4CF298B685A00DED9F3 /* libRazorpaySwiftUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRazorpaySwiftUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1828B4D2298B685A00DED9F3 /* RazorpaySwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazorpaySwiftUI.swift; sourceTree = "<group>"; };
+		1828B4D9298B697E00DED9F3 /* Checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
+		1828B4DB298B699700DED9F3 /* Razorpay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Razorpay.xcframework; sourceTree = "<group>"; };
+		1828B4DD298B6C5200DED9F3 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1828B4DC298B699700DED9F3 /* Razorpay.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +48,7 @@
 		1828B4C6298B685A00DED9F3 = {
 			isa = PBXGroup;
 			children = (
+				1828B4DB298B699700DED9F3 /* Razorpay.xcframework */,
 				1828B4D1298B685A00DED9F3 /* RazorpaySwiftUI */,
 				1828B4D0298B685A00DED9F3 /* Products */,
 			);
@@ -58,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				1828B4D2298B685A00DED9F3 /* RazorpaySwiftUI.swift */,
+				1828B4D9298B697E00DED9F3 /* Checkout.swift */,
+				1828B4DD298B6C5200DED9F3 /* ViewExtension.swift */,
 			);
 			path = RazorpaySwiftUI;
 			sourceTree = "<group>";
@@ -120,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1828B4DE298B6C5200DED9F3 /* ViewExtension.swift in Sources */,
 				1828B4D3298B685A00DED9F3 /* RazorpaySwiftUI.swift in Sources */,
+				1828B4DA298B697E00DED9F3 /* Checkout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
