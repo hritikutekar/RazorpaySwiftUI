@@ -7,21 +7,34 @@
 
 import SwiftUI
 
-public extension View {
+extension View {
     func razorpayCheckoutSheet(
         isPresented: Binding<Bool>,
         amount: Int,
         onSuccess: @escaping (_ paymentId: String) -> (),
         onError: @escaping (_ code: Int32, _ description: String) -> ()
     ) -> some View {
-        overlay {
-            CheckoutView(
-                isPresented: isPresented,
-                amount: amount,
-                onSuccess: onSuccess,
-                onError: onError
-            )
-            .allowsHitTesting(false)
+        if #available(iOS 15.0, *) {
+            overlay {
+                CheckoutView(
+                    isPresented: isPresented,
+                    amount: amount,
+                    onSuccess: onSuccess,
+                    onError: onError
+                )
+                .allowsHitTesting(false)
+            }
+        } else {
+            ZStack {
+                CheckoutView(
+                    isPresented: isPresented,
+                    amount: amount,
+                    onSuccess: onSuccess,
+                    onError: onError
+                )
+                .allowsHitTesting(false)
+            }
+            .opacity(0)
         }
     }
 }
