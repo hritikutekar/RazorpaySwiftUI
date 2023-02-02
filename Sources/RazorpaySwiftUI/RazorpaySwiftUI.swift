@@ -11,10 +11,4 @@ public class RazorpaySwiftUI {
     public var razorpayKey: String = ""
     public var contact: String = ""
     public var email: String = ""
-    
-    public init() {}
-    
-    public func setRazorpayKey(_ key: String) {
-        self.razorpayKey = key
-    }
 }
