@@ -15,7 +15,7 @@ extension View {
         onError: @escaping (_ code: Int32, _ description: String) -> ()
     ) -> some View {
         if #available(iOS 15.0, *) {
-            overlay {
+            return overlay {
                 CheckoutView(
                     isPresented: isPresented,
                     amount: amount,
@@ -25,7 +25,7 @@ extension View {
                 .allowsHitTesting(false)
             }
         } else {
-            ZStack {
+            return ZStack {
                 CheckoutView(
                     isPresented: isPresented,
                     amount: amount,
